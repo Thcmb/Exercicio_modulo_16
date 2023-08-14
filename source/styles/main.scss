@@ -1,0 +1,81 @@
+@use 'variaveis';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: variaveis.$corPrincipal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+
+    h1 {
+    font-size: 20px;    
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    }
+}
+
+.container {
+    position: relative;
+
+    input {
+    outline: none;
+    border: 1px solid variaveis.$corPrincipal;
+    margin: 8px 0;
+    background-color: #fff;
+    padding: 15px;
+    line-height: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+}
+
+button {
+    border: 1px solid variaveis.$corPrincipal;
+    margin: 8px 0;
+    display: block;
+    padding: 13px;
+    background-color: variaveis.$corButton;
+    color: #fff;
+    line-height: 20px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(variaveis.$corButton, 15%);
+    }
+}
+
+.cadastrar {
+    color: #6B7280;
+    font-size: 13px;
+    text-align: center;
+
+    a {
+        text-decoration: underline;
+        color: darken(variaveis.$corButton, 15%); ;
+    }
+}
